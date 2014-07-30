@@ -1,0 +1,212 @@
+/***
+
+app.scss 
+author: Lawrence Shiou
+
+***/
+
+@import "compass/reset";
+@import "compass";
+
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$header-color: #1A9DBA;
+$hover-color: #1A9DBA;
+$border-color: #ddd;
+$box-background: #f7f7f9;
+$font-weight-low: 200;
+$font-weight-medium: 400;
+$font-weight-high: 500;
+$font-color: #555;
+$font-size: 0.8em;
+$circle-img-size: 66px;
+$bigger-circle-img-size: 122px;
+
+$header-color-themeB: #eff0f1;
+
+.container {
+	min-width: 1125px;
+	min-height: 500px;
+	padding: 0 20px;
+	font-family: $font-stack;
+	font-weight: $font-weight-low;
+	font-size: $font-size;
+	color: $font-color;
+	background-color: $box-background;
+	overflow: hidden;
+
+	.list {
+		list-style: none;
+		padding-left: 0;  
+	}
+
+	h2 {
+		font-weight: $font-weight-medium;
+		color: $header-color;  
+		border-bottom: 1px solid $border-color;
+		margin-right: 10px;
+		padding-left: 5px;
+		text-transform: uppercase;
+	}  
+}
+
+#themeSelect {
+	@include float-right;
+	margin: 0 20px 5px;	
+}
+
+#sidebar {
+	@include float-left;
+	width: 33%;
+	background-color: $box-background; 
+}
+
+#movieList {
+	padding: 20px;
+
+	div {
+		width: 140px;
+		@include inline-block;
+		vertical-align: text-top;
+		margin: 10px;
+	}
+
+	img {
+		width: $bigger-circle-img-size;
+		height: $bigger-circle-img-size;
+		border: 9px solid transparent;		
+		@include border-radius(50%);
+	}
+
+	a {
+		@include inline-block;
+		width: 100%;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		color: $font-color;
+		font-weight: $font-weight-medium;
+
+		&:hover {
+			color: $hover-color;
+		}
+
+		&:hover img {
+			border: 9px solid $hover-color;
+		}
+	}
+}
+
+#content {
+	@include float-right;
+	width: 67%;
+	overflow: hidden;
+	background-color: white;
+	@include box-shadow(-3px 0 10px 2px #bbb);
+}
+
+
+#summary, #credits {
+	overflow: hidden;
+	padding: 20px;
+}
+
+
+#summary {
+	img {
+		width: 174px;
+		height: 262px;
+		@include float-left;
+		padding: 15px 30px 0 10px;
+	}
+
+	div {
+		margin-top: 15px;
+		width: 65%;
+		@include inline-block;
+	}
+
+	p {
+		padding: 0;
+	}
+}
+
+
+#actorList {
+	margin-left: 10px;
+	float: left;
+	width: 42%;
+
+	li {
+	 	padding-bottom: 10px;
+
+		&:hover {
+			color: $hover-color;
+			cursor: pointer;
+		}
+
+		&:hover img {
+			border: 5px solid $hover-color;
+		}
+	}
+
+	img {
+		width: $circle-img-size;
+		height: $circle-img-size;
+		@include border-radius(50%);
+		margin: 15px 15px 0 0;
+		border: 5px solid transparent;
+	}
+
+	p.actor {
+		text-transform: uppercase;
+		font-weight: $font-weight-high;
+	}
+
+	.names {
+		@include inline-block;
+		vertical-align: top;
+		margin-top: 35px;
+		width: 200px;
+	}
+}
+
+
+#actorPic {
+	@include float-right;
+	height: 420px;
+
+	img {
+	  width: 347px;  
+	  height: 420px;
+	}
+}
+
+#welcome {
+	min-height: 500px;
+	padding: 50px;
+	font-size: 1.5em;
+}
+
+/*********** themeB ************/
+
+.themeB {
+	background-color: black;
+	color: #D9E3ED;
+
+	#sidebar{
+		background-color: #1c1d1e;
+
+		h2 {
+			color: $header-color-themeB;
+		}
+	}
+
+	#movieDetail {
+		h3, h4{
+		  color: $header-color-themeB;
+		}
+	}
+}
+
+
+

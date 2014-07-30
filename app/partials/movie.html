@@ -1,0 +1,31 @@
+
+<!-- movie detail -->
+<section id="movieDetail">
+  <div id="summary">
+    <h2>{{movie.original_title}}</h2>
+    <!-- show image when object is ready -->
+    <img ng-show="movie" src="{{baseUrl}}{{movie.poster_path}}{{suffixUrl}}">
+    <div>
+      <p>{{movie.overview}}</p>
+    </div>
+  </div>
+  <div id="credits">
+    <h2>Movie Credits (click on name to show profile photo)</h2>
+    <div id="actorList">
+      <!-- list of characters -->
+      <ul class='list'>
+        <li ng-repeat="credit in credits" ng-click="openCast(credit.profile_path)">
+          <img ng-show="credit" src="{{baseUrl}}{{credit.profile_path}}{{suffixUrl}}">
+          <div class="names">
+            <p class="actor">{{credit.name}}</p>
+            <p>{{credit.character}}</p>          
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div id="actorPic">
+        <img ng-show="profilePic" src="{{profilePic}}">
+    </div>
+  <div>
+</section>    
+

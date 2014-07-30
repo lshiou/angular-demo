@@ -1,0 +1,129 @@
+/***
+
+app.scss 
+author: Lawrence Shiou
+
+***/
+.container {
+  min-width: 1125px;
+  min-height: 500px;
+  padding: 0 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 0.8em;
+  color: #555555;
+  background-color: #f7f7f9;
+  overflow: hidden; }
+  .container .list {
+    list-style: none;
+    padding-left: 0; }
+  .container h2 {
+    font-weight: 400;
+    color: #1a9dba;
+    border-bottom: 1px solid #dddddd;
+    margin-right: 10px;
+    padding-left: 5px;
+    text-transform: uppercase; }
+
+#themeSelect {
+  float: right;
+  margin: 0 20px 5px; }
+
+#sidebar {
+  float: left;
+  width: 33%;
+  background-color: #f7f7f9; }
+
+#movieList {
+  padding: 20px; }
+  #movieList div {
+    width: 140px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 10px; }
+  #movieList img {
+    width: 122px;
+    height: 122px;
+    border: 9px solid transparent;
+    border-radius: 50%; }
+  #movieList a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: 400; }
+  #movieList a:hover img {
+    border: 9px solid #1a9dba; }
+  #movieList a:hover {
+    color: #1a9dba; }
+
+#content {
+  float: right;
+  width: 67%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: -3px 0 10px 2px #bbb; }
+
+#summary, #credits {
+  overflow: hidden;
+  padding: 20px; }
+
+#summary img {
+  width: 174px;
+  height: 262px;
+  float: left;
+  padding: 15px 30px 0 10px; }
+#summary div {
+  width: 65%;
+  display: inline-block; }
+#summary p {
+  padding: 0; }
+
+#actorList {
+  margin-left: 10px;
+  float: left;
+  width: 42%; }
+  #actorList li {
+    padding-bottom: 10px; }
+  #actorList li:hover {
+    color: #1a9dba;
+    cursor: pointer; }
+  #actorList img {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 5px solid transparent; }
+  #actorList li:hover img {
+    border: 5px solid #1a9dba; }
+  #actorList p.actor {
+    text-transform: uppercase;
+    font-weight: 500; }
+  #actorList .names {
+    display: inline-block;
+    vertical-align: top; }
+
+#actorPic {
+  float: right;
+  height: 420px; }
+  #actorPic img {
+    width: 347px;
+    height: 420px; }
+
+#welcome {
+  min-height: 500px;
+  padding: 50px;
+  font-size: 1.5em; }
+
+/*********** themeB ************/
+.themeB {
+  background-color: black;
+  color: #D9E3ED; }
+  .themeB #sidebar {
+    background-color: #1c1d1e; }
+    .themeB #sidebar h2 {
+      color: #eff0f1; }
+  .themeB #movieDetail h3, .themeB #movieDetail h4 {
+    color: #eff0f1; }

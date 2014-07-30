@@ -1,0 +1,292 @@
+/***
+
+app.scss 
+author: Lawrence Shiou
+
+***/
+/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 26, ../sass/app.scss */
+.container {
+  min-width: 1125px;
+  min-height: 500px;
+  padding: 0 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 0.8em;
+  color: #555555;
+  background-color: #f7f7f9;
+  overflow: hidden;
+}
+/* line 37, ../sass/app.scss */
+.container .list {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 42, ../sass/app.scss */
+.container h2 {
+  font-weight: 400;
+  color: #1a9dba;
+  border-bottom: 1px solid #dddddd;
+  margin-right: 10px;
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+
+/* line 52, ../sass/app.scss */
+#themeSelect {
+  display: inline;
+  float: right;
+  margin: 0 20px 5px;
+}
+
+/* line 57, ../sass/app.scss */
+#sidebar {
+  display: inline;
+  float: left;
+  width: 33%;
+  background-color: #f7f7f9;
+}
+
+/* line 63, ../sass/app.scss */
+#movieList {
+  padding: 20px;
+}
+/* line 66, ../sass/app.scss */
+#movieList div {
+  width: 140px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: text-top;
+  margin: 10px;
+}
+/* line 73, ../sass/app.scss */
+#movieList img {
+  width: 122px;
+  height: 122px;
+  border: 9px solid transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 80, ../sass/app.scss */
+#movieList a {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555555;
+  font-weight: 400;
+}
+/* line 89, ../sass/app.scss */
+#movieList a:hover {
+  color: #1a9dba;
+}
+/* line 93, ../sass/app.scss */
+#movieList a:hover img {
+  border: 9px solid #1a9dba;
+}
+
+/* line 99, ../sass/app.scss */
+#content {
+  display: inline;
+  float: right;
+  width: 67%;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: -3px 0 10px 2px #bbbbbb;
+  -moz-box-shadow: -3px 0 10px 2px #bbbbbb;
+  box-shadow: -3px 0 10px 2px #bbbbbb;
+}
+
+/* line 108, ../sass/app.scss */
+#summary, #credits {
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* line 115, ../sass/app.scss */
+#summary img {
+  width: 174px;
+  height: 262px;
+  display: inline;
+  float: left;
+  padding: 15px 30px 0 10px;
+}
+/* line 122, ../sass/app.scss */
+#summary div {
+  margin-top: 15px;
+  width: 65%;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 128, ../sass/app.scss */
+#summary p {
+  padding: 0;
+}
+
+/* line 134, ../sass/app.scss */
+#actorList {
+  margin-left: 10px;
+  float: left;
+  width: 42%;
+}
+/* line 139, ../sass/app.scss */
+#actorList li {
+  padding-bottom: 10px;
+}
+/* line 142, ../sass/app.scss */
+#actorList li:hover {
+  color: #1a9dba;
+  cursor: pointer;
+}
+/* line 147, ../sass/app.scss */
+#actorList li:hover img {
+  border: 5px solid #1a9dba;
+}
+/* line 152, ../sass/app.scss */
+#actorList img {
+  width: 66px;
+  height: 66px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 15px 15px 0 0;
+  border: 5px solid transparent;
+}
+/* line 160, ../sass/app.scss */
+#actorList p.actor {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* line 165, ../sass/app.scss */
+#actorList .names {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin-top: 35px;
+  width: 200px;
+}
+
+/* line 174, ../sass/app.scss */
+#actorPic {
+  display: inline;
+  float: right;
+  height: 420px;
+}
+/* line 178, ../sass/app.scss */
+#actorPic img {
+  width: 347px;
+  height: 420px;
+}
+
+/* line 184, ../sass/app.scss */
+#welcome {
+  min-height: 500px;
+  padding: 50px;
+  font-size: 1.5em;
+}
+
+/*********** themeB ************/
+/* line 192, ../sass/app.scss */
+.themeB {
+  background-color: black;
+  color: #D9E3ED;
+}
+/* line 196, ../sass/app.scss */
+.themeB #sidebar {
+  background-color: #1c1d1e;
+}
+/* line 199, ../sass/app.scss */
+.themeB #sidebar h2 {
+  color: #eff0f1;
+}
+/* line 205, ../sass/app.scss */
+.themeB #movieDetail h3, .themeB #movieDetail h4 {
+  color: #eff0f1;
+}

@@ -1,0 +1,26 @@
+
+<!-- movie list, bind with moviesController -->
+<div id="movieList" ng-controller="moviesController">
+  
+  <h2>Browse Movies</h2>
+  <!-- list of movies -->
+
+
+  <section class="list" >
+    <div ng-repeat="movie in moviesList">
+<!--
+	    <img ng-show="movie" src="{{baseUrl}}{{movie.poster_path}}{{suffixUrl}}">
+	    <span>
+		    <a href="#/movies/{{movie.id}}">{{movie.title}}</a>
+		</span>
+-->
+	    
+	    <span>
+		    <a href="#/movies/{{movie.id}}">
+		    	<img ng-show="movie" src="{{baseUrl}}{{movie.poster_path}}{{suffixUrl}}">
+		    	{{movie.title}}
+		    </a>
+		</span>
+    </div>
+  </section>  
+</div>
